@@ -1,0 +1,1 @@
+[{'count': 85, 'threatname': 'DNSChanger.cq.e', 'targethostname': 'hn-562.anonpc.id'}, {'count': 4, 'threatname': 'Exploit-PDF.q.gen!stream', 'targethostname': 'xc-825.anonpc.id'}, {'count': 3, 'threatname': 'RemAdm-VNC', 'targethostname': 'gr-983.anonpc.id'}, {'count': 1, 'threatname': 'Generic Exploit!bi', 'targethostname': 'sb-607.anonpc.id'}]

@@ -1,0 +1,54 @@
+Two security visualizations as seen at bsidesPDX 10/2011
+jeff bryner
+
+
+Prerequesites: 
+#   -a working kinect environment with skeleton tracking via open NITE
+#   -python 3.2
+#   -blender 2.57 (blender.org)
+#   -metasploit with xmlrpc and the database engine working
+#   -numpy
+#   -osceleton github.com/Sensebloom/osceleton
+#   -jack the realtime sound engine (jackaudio.org)
+# 
+
+Top Virus Carriers: 
+Scenario: 
+Querying a mcafee EPO server for the top virus carriers in it's database. Carriers are represented as people
+carrying barrels of toxic waste sized to represent their virus load. The player can interact with the folks to 
+find out more about their virus issues.
+
+To run: 
+Open topcarriers.blend in blender
+Run the blenderHelperServer.py program in the helper directory.
+Run osceleton -r -f in a terminal/command window and let it recognize you
+Press P in the blender 3D window
+
+Gestures: 
+Lean forward to move forward, backward to move backward, left to move left, right to move right. 
+Rotate hips right or left to rotate the player's viewpoint right or left. 
+Right hand to left shoulder initiates the discover of virus carriers. 
+Once in range of a virus carrier, lift both arms out in front as if laying hands on the victim
+to get information on their virus load.
+Once the detail is displayed you can move your right hand in a come closer gesture 
+(i.e. waist height, slightly out in front of your body, moving up and back to your body)
+to move forward in the list of files. 
+Reverse the gesture (i.e. move down and back to the body) to scroll back through the list. 
+
+
+Firewall Visualization: 
+Scenario: 
+Visualizing logs from a cisco asa firewall. Packets enter the room, bounce off a firewall and are sorted/counted 
+on a scoreboard wall in the back.
+
+To run: 
+Open firewall.counter.blend in blender
+Run osceleton -r -f in a terminal/command window and let it recognize you
+Press P in the blender 3D window
+Run ./logreplay.py -f lotsologs.txt | ./asa2osc.txt  in a terminal window in the logs directory to start the firewall logs
+
+You should see packets shooting to the firewall, bouncing off and being counted/sorted by the sorting wall in the back.
+Movement gestures apply as above, no interaction gestures as of yet.
+
+
+
